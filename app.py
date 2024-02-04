@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = '10.0.0.2:27017/studentdb'
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/studentdb'
 mongo = PyMongo(app)
 
 html_content = """
